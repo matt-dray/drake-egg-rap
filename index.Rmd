@@ -1,0 +1,24 @@
+---
+title: "Egg statistics"
+output:
+  govdown::govdown_document
+---
+
+## Background
+
+The ['latest UK egg statistics' publication](https://www.gov.uk/government/statistics/egg-statistics) contains the latest quarterly UK statistics about eggs.
+
+It's published by the [Department for Environment, Food and Rural Affairs](https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs).
+
+## Throughput
+
+Below is a recreation of Figure 2 from the [UK egg statistics notice](https://www.gov.uk/government/statistics/egg-statistics) document. It shows egg production over time, split by production methods.
+
+```{r, egg-throughput, warning=FALSE, echo=FALSE, fig.width=8, fig.height=6, dpi=100}
+library(drake)
+readd(plot)
+```
+
+The eggs are class A and there are 360 eggs per case.
+
+The data are available from the [UK egg packing station throughput and prices dataset](https://www.gov.uk/government/statistics/egg-statistics). The data set is Crown copyright but may be reproduced without formal permission or charge for personal or in-house use.
