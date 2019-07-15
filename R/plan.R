@@ -12,7 +12,7 @@ plan <- drake_plan(
   
   plot = create_plot(data),
   
-  report = rmarkdown::render(
+  report = render(
     knitr_in("egg-report.Rmd"),
     output_file = file_out("docs/egg-report.html"),
     quiet = TRUE
