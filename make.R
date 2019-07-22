@@ -19,7 +19,7 @@ make(plan)
 
 # Make a config file of your plan
 
-egg_config <- drake_config(plan)
+egg_config <- drake_config(egg_plan)
 
 # Pass the config to a function for generating an interactive dependency graph 
 
