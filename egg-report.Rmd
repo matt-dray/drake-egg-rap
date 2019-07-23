@@ -1,7 +1,13 @@
 ---
-title: "Egg statistics"
+title: "UK egg statistics"
 output:
-  govdown::govdown_document
+  govdown::govdown_document:
+    font: "sans-serif"
+    page_title: "Demo: {drake} for RAP"
+    logo_text: ""
+    title: "Demo: {drake} for RAP"
+    phase: beta
+    feedback_url: "https://github.com/matt-dray/drake-egg-rap/issues"
 ---
 
 ## Background
@@ -9,6 +15,8 @@ output:
 The ['latest UK egg statistics' publication](https://www.gov.uk/government/statistics/egg-statistics) contains the latest quarterly UK statistics about eggs.
 
 It's published by the [Department for Environment, Food and Rural Affairs](https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs).
+
+This report is the output from a demo of using [the {drake} package](https://github.com/ropensci/drake) for R. It's not an official government publication.
 
 ## Throughput
 

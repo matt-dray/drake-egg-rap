@@ -15,7 +15,7 @@ source("R/plan.R")      # Create your drake plan.
 # Your targets will be stored in a hidden .drake/ cache,
 # and you can read them back into memory with loadd() and read().
 
-make(plan)
+make(egg_plan)
 
 # Make a config file of your plan
 
