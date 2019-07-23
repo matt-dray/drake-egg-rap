@@ -3,9 +3,9 @@ title: "UK egg statistics"
 output:
   govdown::govdown_document:
     font: "sans-serif"
+    title: "Demo: {drake} for RAP"
     page_title: "Demo: {drake} for RAP"
     logo_text: ""
-    title: "Demo: {drake} for RAP"
     phase: beta
     feedback_url: "https://github.com/matt-dray/drake-egg-rap/issues"
 ---
@@ -23,7 +23,6 @@ This report is the output from a demo of using [the {drake} package](https://git
 Below is a recreation of Figure 2 from the [UK egg statistics notice](https://www.gov.uk/government/statistics/egg-statistics) document. It shows egg production over time, split by production methods.
 
 ```{r, egg-throughput, warning=FALSE, echo=FALSE, fig.width=8, fig.height=6, dpi=100}
-library(drake)
 readd(plot)
 ```
 
