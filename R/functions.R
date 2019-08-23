@@ -1,5 +1,6 @@
 # functions.R
 
+# This function takes the raw egg data and cleans it ready for plotting 
 clean_data <- function(raw_data) {
   
   clean_data <- raw_data %>% 
@@ -14,6 +15,7 @@ clean_data <- function(raw_data) {
   
 }
 
+# This function takes the cleaned data and creates a line chart
 create_plot <- function(data) {
   
   plot <- data %>% 

@@ -13,7 +13,7 @@ source("R/plan.R")      # Create your drake plan.
 
 # Call make() to run your work.
 # Your targets will be stored in a hidden .drake/ cache,
-# and you can read them back into memory with loadd() and read().
+# and you can read them back into memory with loadd() and readd().
 
 make(egg_plan)
 
@@ -25,9 +25,6 @@ egg_config <- drake_config(egg_plan)
 
 dependency_graph <- vis_drake_graph(egg_config)
 
-# Optionally save the graph
-
-# visNetwork::visSave(
-#   dependency_graph,
-#   "dependency_graph.html"
-# )
+# Continue to work on your files, then source() them again
+# outdated(egg_config) will print out-of-date files and impacted dependencies
+# Recreate the dependency graph to see this visually
