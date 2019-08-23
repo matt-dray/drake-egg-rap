@@ -1,5 +1,9 @@
 # drake-egg-rap
 
+<!-- badges: start -->
+[![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/matt-dray/drake-egg-rap/master?urlpath=rstudio)
+<!-- badges: end -->
+
 Read the accompanying blog: https://www.rostrum.blog/2019/07/23/can-drake-rap/
 
 ## Purpose

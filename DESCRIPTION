@@ -1,0 +1,22 @@
+Type: Compendium
+Package: drake-egg-rap
+Title: Demo: {drake} for reproducible reporting
+Version: 0.0.1
+Authors@R: 
+    person(given = "Matt",
+           family = "Dray",
+           role = c("aut", "cre"),
+           email = "mwdray@gmail.com")
+Description: Your compendium description
+License: MIT + file LICENSE
+Depends: 
+    dplyr,
+    drake,
+    ggplot2,
+    govdown,
+    janitor,
+    readODS,
+    rmarkdown,
+    tidyr
+Encoding: UTF-8
+LazyData: true
