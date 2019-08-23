@@ -17,7 +17,8 @@ Depends:
     janitor,
     readODS,
     rmarkdown,
-    tidyr
+    tidyr,
+    visNetwork
 Remotes: ukgovdatascience/govdown
 Encoding: UTF-8
 LazyData: true
