@@ -6,8 +6,8 @@
 
 ## Outputs
 
-* [Read the accompanying blog](https://www.rostrum.blog/2019/07/23/can-drake-rap/)
-* Launch the code in a live browser instance of RStudio by clicking the 'launch binder' badge above
+* [Read the accompanying blog post](https://www.rostrum.blog/2019/07/23/can-drake-rap/)
+* Launch the code in a live browser instance of RStudio by clicking the 'launch binder' badge above ([there'sa blog post about this too](https://www.rostrum.blog/2019/08/25/holepunch-drake/))
 * [See the demo output](https://matt-dray.github.io/drake-egg-rap/)
 * [See a dependency graph before changes were made to the workflow](https://matt-dray.github.io/drake-egg-rap/dependency-graph.html)
 * [See a dependency graph after changes were made](https://matt-dray.github.io/drake-egg-rap/dependency-graph-outdated.html)
