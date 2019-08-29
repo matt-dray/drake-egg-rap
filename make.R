@@ -8,32 +8,36 @@
 
 
 # Load your packages and supporting functions into your session.
-source("R/packages.R")  # Load your packages, e.g. library(drake).
-source("R/functions.R") # Define your custom code as a bunch of functions.
-source("R/plan.R")      # Create your drake plan.
+source("R/packages.R")  # Load packages
+source("R/functions.R") # Custom functions used in the plan
+source("R/plan.R")      # Create your drake plan
 
-# Call make() to run your work.
-# Your targets will be stored in a hidden .drake/ cache,
-# and you can read them back into memory with loadd() and readd().
+# Call make() to run your work
 make(egg_plan)
+# Your targets will be stored in a hidden .drake/ cache,
+# and you can read them back into memory with loadd() and readd()
+
+# Generate a config file of your plan
+egg_config <- drake_config(egg_plan)
 
 
-# Visualise ---------------------------------------------------------------
+# Visualise (optional) ----------------------------------------------------
 
-
-# Optionally, you can visualise the dependency network interactively
-
-# Make a config file of your plan (this creates egg_config$graph for plotting)
-# egg_config <- drake_config(egg_plan)
 
 # Use the config file to generate a interactive dependency graph 
-# dependency_graph <- vis_drake_graph(egg_config)
+# vis_drake_graph(egg_config)
 
 
 # Make changes ------------------------------------------------------------
 
 
 # Continue to work on your files, then source() them again
-# outdated(egg_config) will print out-of-date files and impacted dependencies
+
+# Print out-of-date files and impacted dependencies
+# outdated(egg_config) will 
+
 # Recreate the dependency graph to see this visually
-# Run make(egg_plan) again to bring the workflow up to date
+# vis_drake_graph(egg_config)
+
+# Bring the workflow up to date
+# make(egg_plan)
