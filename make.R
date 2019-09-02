@@ -34,7 +34,7 @@ egg_config <- drake_config(egg_plan)
 # Continue to work on your files, then source() them again
 
 # Print out-of-date files and impacted dependencies
-# outdated(egg_config) will 
+# outdated(egg_config)
 
 # Recreate the dependency graph to see this visually
 # vis_drake_graph(egg_config)

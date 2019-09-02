@@ -22,17 +22,17 @@ In short:
 
 1. Run `make.R` to execute the workflow that createes the report (in the `docs/` folder).
 1. Change stuff.
-1. Run `make.R` again to bring everything up to date ({drake} only runs out of date).
+1. Run `make.R` again to bring everything up to date ({drake} only runs the things that are out-of-date).
 
 ### Full process
 
 You need only run the contents of `make.R` to execute the workflow, which will create the output report in the `docs/` folder (intermediate objects are added to the hidden `.drake/` folder).
 
-If you change part of the workflow---e.g. change the chart title in the `create_plot()` function of the `functions.R` script---you don't have to re-run everything, or try to remember exactly which files need to be re-run. {drake} does this for you.
+If you change part of the workflow (e.g. change the chart title in the `create_plot()` function of the `functions.R` script) you don't have to re-run everything, or try to remember exactly which files need to be re-run. {drake} does this for you.
 
-Instead, you can redo `source(functions.R)` and `outdated(egg_plan)` will tell you the files that have been updated or impacted by that update, which you can bring up to date by executing `make(egg_plan)` again.
+Instead, you can redo `source(functions.R)` and `outdated(egg_plan)` will tell you the files that have been updated or impacted by that update. You can bring up to date by executing `make(egg_plan)` again.
 
-A helpful addition is that you can [visualise the dependency network](https://matt-dray.github.io/drake-egg-rap/dependency-graph.html)---and its [outdated version](https://matt-dray.github.io/drake-egg-rap/dependency-graph-outdated.html)---by passing a `drake_config()` object to `vis_drake_graph()` (code is supplied for this in marke.R).
+A helpful addition is that you can [visualise the dependency network](https://matt-dray.github.io/drake-egg-rap/dependency-graph.html) (and its [outdated version](https://matt-dray.github.io/drake-egg-rap/dependency-graph-outdated.html)) by passing the `drake_config()` object to `vis_drake_graph()` (code is supplied for this in `make.R` file).
 
 ## File structure
 
