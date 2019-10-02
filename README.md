@@ -12,7 +12,7 @@ You can:
 
 * read [my blog post](https://www.rostrum.blog/2019/07/23/can-drake-rap/) about how {drake} could be helpful for the UK government's [Reproducible Analytical Pipelines](https://ukgovdatascience.github.io/rap-website/) approach to producing statistical publications
 * launch the contents of this repo in a live browser instance of RStudio by clicking the 'launch binder' badge above ([read another blog post about why this is awesome]((https://www.rostrum.blog/2019/08/25/holepunch-drake/))
-* take a look at a presentation I gave about {drake} at a couple of cross-government [Coffee & Coding](https://ukgovdatascience.github.io/rap-website/resource-coffee-and-coding.html) events
+* take a look at [a presentation I gave about {drake}](https://github.com/matt-dray/drake-egg-rap/blob/master/docs/drake-presentation.pdf) at a couple of cross-government [Coffee & Coding](https://ukgovdatascience.github.io/rap-website/resource-coffee-and-coding.html) events
 * download or clone this repo to serve as the basis for your own {drake} pipeline
 * download a clean {drake} project template example with `drake::drake_example("main")`.
 
