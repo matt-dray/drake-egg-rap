@@ -1,4 +1,5 @@
 # plan.R
+# Wrap all the steps of the analysis into a drake_plan object
 
 egg_plan <- drake_plan(  # Create a drake_plan object called egg_plan
   
@@ -19,10 +20,10 @@ egg_plan <- drake_plan(  # Create a drake_plan object called egg_plan
   
   # 4. Finally, render the R Markdown report
   # drake::knitr_in() marks the .Rmd file as a dependency
-  # drake::file_out() marks the .HTML as having been created by a target
+  # drake::file_out() marks the .html as having been created by a target
   report = rmarkdown::render(
     knitr_in("egg-report.Rmd"),
-    output_file = file_out("docs/egg-report.html"),
+    output_file = file_out("egg-report.html"),
     quiet = TRUE
   )
   

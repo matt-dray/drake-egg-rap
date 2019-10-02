@@ -1,4 +1,5 @@
 # functions.R
+# Bespoke functions I've created to help produce the final output
 
 # This function takes the raw egg data and cleans it ready for plotting 
 clean_data <- function(raw_data) {
@@ -27,7 +28,7 @@ create_plot <- function(data) {
     geom_text(aes(x = 2004, y = 3000, label = "Barn", color = "barn"), check_overlap = TRUE, show.legend = FALSE) + 
     geom_text(aes(x = 2012, y = 3000, label = "Organic", color = "organic"), check_overlap = TRUE, show.legend = FALSE) + 
     labs(
-      title = "jrdjdgdjgdgfdgjfd",
+      title = "UK egg throughput by production method",
       subtitle = "Free range has overtaken enriched throughput",
       x = "",
       y = "Thousand cases"
